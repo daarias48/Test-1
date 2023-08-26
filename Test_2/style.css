@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.charizard {
+    margin: 4rem auto auto auto;
+    box-shadow: 2px 2px 2px 1px #B3B2B1;
+    border-radius: 25px;
+    width: 70%;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 300px;
+    max-height: 400px;
+    background-color: #F56A10;
+}
+
+.charizard__name{
+    position: relative;
+    font-family: 'Tilt Neon', cursive;
+    left: 30px;
+    bottom: -50px;
+    font-size: 3.5rem;
+    color: #F0CE08;
+    transition: 1s;
+}
+
+.charizard__name:active{
+    color: #f51010;
+    font-size: 6rem;
+}
+
+.charizard__figure{
+    position: relative;
+    left: 300px;
+    bottom: 250px;
+}
+
+.charizard__figure div{
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.charizard__figure .front{
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.charizard__figure .back{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.charizard__figure:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+    cursor: pointer;
+}
+.charizard__figure:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+    cursor: pointer;
+}
+
+.charizard__descrip{
+    font-family: 'Tilt Neon', cursive;
+    color: white;
+    font-size: 1.5rem;
+    width: 60%;
+    position: relative;
+    left: 30px;
+    bottom: -60px;
+    text-align: justify;
+}
+
+.charizard__descrip::before{
+    content: "Its powerful wings allow it to fly at an altitude of 1,400 m";
+}
+
+.charizard__descrip::after{
+    content: "very high temperatures.";
+}
+
+.charizard__habilities {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 150px;
+    bottom: -129px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.charizard__habilities--feat {
+    margin: 1.5rem 0 0 0;
+    font-size: 1.5rem;
+    background-color: white;
+    min-height: 65px;
+    max-height: 120px;
+    width: 45%;
+    display: inline-block;
+}
+
+.charizard__habilities--feat h4 {
+    width: inherit;
+    margin-left: 2.5rem;
+    color: #0e3e7e;
+}
+
+.charizard__habilities--feat h4 + p {
+    width: inherit;
+    color: rgb(88, 83, 83);
+    margin-left: 2.5rem;
+
+}
+
+.charizard__habilities--power {
+    font-size: 1.5rem;
+    min-height: 65px;
+    max-height: 120px;
+    width: 45%;
+    display: inline-block;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.charizard__habilities--power h4 ~ p{
+    margin-top: 1.3rem;
+    border-radius: 0.7rem;
+}
+
+.charizard__habilities--power1 {
+    background-color: #0e3e7e;
+    color: white;
+    transition: 1s;
+    
+}
+
+.charizard__habilities--power1:hover {
+    background-color: #15273d;
+    color: white;
+    transform: rotate(45deg) translate(50px, 0) ;
+}
+
+
+.charizard__habilities--power2 {
+    background-color: #f5dc00;
+    color: black;
+}
+
+.charizard__habilities--power3 {
+    background-color: #5a2c00;
+    color: white;
+}
+
+
